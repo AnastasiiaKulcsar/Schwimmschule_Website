@@ -142,14 +142,20 @@ a:hover {
   color: var(--primary);
 }
 
-/* Hero */
+/* Hero – full-width banner like reference site */
 .hero {
-  background-image: linear-gradient(135deg, rgba(13, 126, 160, 0.75) 0%, rgba(6, 96, 122, 0.85) 100%), url("../images/banner_swim.png");
+  background-image: linear-gradient(135deg, rgba(13, 126, 160, 0.55) 0%, rgba(6, 96, 122, 0.7) 100%), url("../images/banner_swim.png");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   color: var(--white);
   padding: 80px 24px 100px;
   text-align: center;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero h1 {
@@ -160,6 +166,7 @@ a:hover {
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 .hero p {
@@ -167,6 +174,7 @@ a:hover {
   opacity: 0.95;
   max-width: 600px;
   margin: 0 auto 28px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
 }
 
 .btn {
@@ -254,19 +262,26 @@ a:hover {
   font-size: 0.95rem;
 }
 
-/* Page title (inner pages) */
+/* Page title (inner pages) – same banner style as homepage */
 .page-hero {
-  background-image: linear-gradient(135deg, rgba(13, 126, 160, 0.75) 0%, rgba(6, 96, 122, 0.85) 100%), url("../images/banner_swim.png");
+  background-image: linear-gradient(135deg, rgba(13, 126, 160, 0.55) 0%, rgba(6, 96, 122, 0.7) 100%), url("../images/banner_swim.png");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   color: var(--white);
   padding: 48px 24px;
   text-align: center;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .page-hero h1 {
   font-size: 2rem;
   font-weight: 700;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 /* Contact */

@@ -1,0 +1,37 @@
+(function () {
+  'use strict';
+
+  var nav = document.getElementById('main-nav');
+  var toggle = document.getElementById('nav-toggle');
+  if (toggle && nav) {
+    toggle.addEventListener('click', function () {
+      nav.classList.toggle('open');
+    });
+  }
+
+  // Mobile: open dropdown when clicking parent
+  document.querySelectorAll('.nav-item').forEach(function (item) {
+    var link = item.querySelector('a');
+    var drop = item.querySelector('.dropdown');
+    if (!link || !drop) return;
+    link.addEventListener('click', function (e) {
+      if (window.innerWidth <= 900) {
+        e.preventDefault();
+        item.classList.toggle('open');
+      }
+    });
+  });
+
+  // Contact form: show message (no backend)
+  var form = document.getElementById('contact-form');
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var msg = document.getElementById('form-message');
+      if (msg) {
+        msg.textContent = 'Vielen Dank! Wir werden uns so schnell wie möglich bei Ihnen melden.';
+        msg.style.color = 'var(--primary)';
+      }
+    });
+  }
+})();

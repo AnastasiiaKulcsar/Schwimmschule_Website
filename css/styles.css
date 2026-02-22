@@ -152,9 +152,9 @@ a:hover {
   color: var(--primary);
 }
 
-/* Hero – full-width banner like reference site */
+/* Hero – full-width banner like reference site (bluer part) */
 .hero {
-  background-image: linear-gradient(135deg, rgba(13, 126, 160, 0.55) 0%, rgba(6, 96, 122, 0.7) 100%), url("../images/banner_swim.png");
+  background-image: linear-gradient(135deg, rgba(13, 126, 160, 0.55) 0%, rgba(6, 96, 122, 0.7) 100%), url("../images/background_children.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -272,9 +272,9 @@ a:hover {
   font-size: 0.95rem;
 }
 
-/* Page title (inner pages) – same banner style as homepage */
+/* Page title (inner pages) – other background */
 .page-hero {
-  background-image: linear-gradient(135deg, rgba(13, 126, 160, 0.55) 0%, rgba(6, 96, 122, 0.7) 100%), url("../images/banner_swim.png");
+  background-image: linear-gradient(135deg, rgba(13, 126, 160, 0.55) 0%, rgba(6, 96, 122, 0.7) 100%), url("../images/background_swim.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

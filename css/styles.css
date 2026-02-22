@@ -67,12 +67,22 @@ a:hover {
 }
 
 .logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--primary);
+  text-decoration: none;
 }
 .logo:hover {
   color: var(--primary-dark);
+}
+.logo-banner {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  vertical-align: middle;
 }
 
 .nav-desktop {

@@ -22,13 +22,19 @@
     });
   });
 
-  // Download form: confirm before downloading
+  // Download form: confirm before downloading, then trigger download (works with Cloudflare Pages)
   document.querySelectorAll('a.js-download-form').forEach(function (link) {
     link.addEventListener('click', function (e) {
       e.preventDefault();
-      if (confirm('Sind Sie einverstanden, das Anmeldeformular herunterzuladen?')) {
-        window.location.href = link.getAttribute('href');
-      }
+      if (!confirm('Sind Sie einverstanden, das Anmeldeformular herunterzuladen?')) return;
+      var href = link.getAttribute('href');
+      var a = document.createElement('a');
+      a.href = href;
+      a.download = 'Anmelderformular-neu.docx';
+      a.style.display = 'none';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
     });
   });
 

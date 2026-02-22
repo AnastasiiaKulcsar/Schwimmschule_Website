@@ -1,0 +1,4 @@
+# Force download for registration form (and other docs) instead of opening in browser
+/docs/*
+  Content-Disposition: attachment
+  X-Content-Type-Options: nosniff

@@ -22,6 +22,16 @@
     });
   });
 
+  // Download form: confirm before downloading
+  document.querySelectorAll('a.js-download-form').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      if (confirm('Sind Sie einverstanden, das Anmeldeformular herunterzuladen?')) {
+        window.location.href = link.getAttribute('href');
+      }
+    });
+  });
+
   // Contact form: show message (no backend)
   var form = document.getElementById('contact-form');
   if (form) {

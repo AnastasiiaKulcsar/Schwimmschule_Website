@@ -367,12 +367,29 @@ a:hover {
 .team-card {
   background: var(--white);
   border-radius: 12px;
-  padding: 24px;
+  overflow: hidden;
+  padding: 0;
   box-shadow: var(--shadow);
   border: 1px solid var(--border);
 }
 
+.team-card-photo {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+  background: var(--water-light);
+}
+
+.team-card h3,
+.team-card .role,
+.team-card p {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
 .team-card h3 {
+  padding-top: 20px;
   margin-top: 0;
   margin-bottom: 4px;
   font-size: 1.2rem;
@@ -383,11 +400,13 @@ a:hover {
   color: var(--primary);
   font-weight: 600;
   margin-bottom: 12px;
+  padding-top: 4px;
 }
 
 .team-card p {
   margin-bottom: 0;
   font-size: 0.95rem;
+  padding-bottom: 24px;
 }
 
 /* Course detail (dates, etc.) */

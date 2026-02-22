@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schwimmschule Delphine – Alle Seiten für Canva (als PDF exportieren)</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    /* Jede „Seite“ beim Drucken auf eine PDF-Seite */
+    @media print {
+      .canva-page { page-break-after: always; page-break-inside: avoid; }
+      .canva-page:last-child { page-break-after: auto; }
+      body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+    .canva-page { min-height: 100vh; display: flex; flex-direction: column; }
+    .canva-page main { flex: 1; }
+    .canva-page + .canva-page { border-top: 4px dashed #0d7ea0; }
+    @media screen {
+      .canva-page::before { content: attr(data-page); display: block; background: #e8f6f9; padding: 8px 24px; font-size: 0.85rem; font-weight: 600; color: #06607a; }
+    }
+    @media print { .canva-page::before { display: none; } }
+    .canva-instructions { background: linear-gradient(135deg, #0d7ea0, #06607a); color: #fff; padding: 20px 24px; text-align: center; font-size: 1rem; }
+    .canva-instructions strong { display: block; margin-bottom: 8px; font-size: 1.1rem; }
+    .canva-instructions a { color: #fff; text-decoration: underline; }
+    @media print { .canva-instructions, .canva-instructions + * { display: none !important; } }
+    @media print { .canva-footer-note { display: none !important; } }
+  </style>
+</head>
+<body>
+
+<div class="canva-instructions">
+  <strong>Alle Seiten als Canva-Projekt hochladen</strong>
+  1. Diese Datei ist geöffnet. Drücken Sie <kbd>Strg</kbd>+<kbd>P</kbd> (Drucken).<br>
+  2. Wählen Sie <strong>„Als PDF speichern“</strong> (oder „Microsoft Print to PDF“) und speichern Sie die Datei.<br>
+  3. In Canva: <strong>Projekt erstellen</strong> → <strong>Hochladen</strong> → PDF auswählen und hochladen.<br>
+  4. Sie erhalten ein Projekt mit 13 Seiten (eine pro Website-Seite). Die Anleitung steht auch in <code>CANVA-UPLOAD-ANLEITUNG.md</code>.
+</div>
+
+<!-- ========== SEITE 1: Startseite ========== -->
+<div class="canva-page" data-page="Seite 1 – Startseite">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo"><img src="../images/banner_swim.png" alt="" class="logo-banner">Schwimmschule Delphine Rosenheim</a>
+      <nav class="nav-desktop">
+        <ul>
+          <li><a href="#">Startseite</a></li>
+          <li class="nav-item"><a href="#">Über uns</a><ul class="dropdown"><li><a href="#">Über uns</a></li><li><a href="#">Team</a></li></ul></li>
+          <li class="nav-item"><a href="#">Kursangebot</a><ul class="dropdown"><li><a href="#">Anfängerkurs</a></li><li><a href="#">Fortgeschrittenenkurs</a></li><li><a href="#">Einzelunterricht</a></li><li><a href="#">Schwimmabzeichen</a></li></ul></li>
+          <li class="nav-item"><a href="#">Kontakt</a><ul class="dropdown"><li><a href="#">Kontakt</a></li><li><a href="#">AGB</a></li></ul></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Menü">☰</button>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>Hier lernt Rosenheim schwimmen!</h1>
+      <p>Entdecken Sie unser individuelles Schwimmtraining für jedes Level. Gemeinsam schwimmen lernen, für eine sichere Zukunft im Wasser. Von den ersten Schwimmzügen bis zum sicheren Schwimmer – wir begleiten Sie auf jedem Schritt!</p>
+      <a href="#" class="btn btn-outline">Mehr erfahren</a>
+    </section>
+    <section class="section section-alt">
+      <h2>Unsere Schwimmschule</h2>
+      <p><strong>Herzlich Willkommen in der Schwimmschule Delphine Rosenheim!</strong></p>
+      <p>Wir bieten individuell gestaltete Schwimmkurse für Kinder jeden Alters und Könnens sowie für Erwachsene an.</p>
+      <p>Unser Ziel ist es, allen Teilnehmenden das Schwimmen auf spielerische und effektive Weise näherzubringen und so für eine sichere Zukunft im Wasser zu sorgen.</p>
+      <p class="text-center mt-2"><a href="#" class="btn">Mehr erfahren</a></p>
+    </section>
+    <section class="section">
+      <h2>Unsere Kurse</h2>
+      <div class="course-grid">
+        <article class="course-card">
+          <h3>Anfängerkurs</h3>
+          <p>Frosch und Seepferdchen Abzeichen</p>
+          <a href="#" class="btn">Mehr erfahren</a>
+        </article>
+        <article class="course-card">
+          <h3>Fortgeschrittenenkurs</h3>
+          <p>Bronze Abzeichen</p>
+          <a href="#" class="btn">Mehr erfahren</a>
+        </article>
+        <article class="course-card">
+          <h3>Einzelunterricht</h3>
+          <p>Für Anfänger und Technikverbesserung</p>
+          <a href="#" class="btn">Mehr erfahren</a>
+        </article>
+      </div>
+      <h3 class="text-center mt-2">Wir freuen uns auf eine großartige Zeit im Wasser!</h3>
+      <p class="text-center"><a href="#" class="btn">Mehr erfahren</a></p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="copyright">© Copyright. Alle Rechte vorbehalten.</p>
+      <div class="footer-links"><a href="#">Impressum</a><a href="#">Datenschutz</a></div>
+    </div>
+  </footer>
+</div>
+
+<!-- ========== SEITE 2: Über uns ========== -->
+<div class="canva-page" data-page="Seite 2 – Über uns">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo"><img src="../images/banner_swim.png" alt="" class="logo-banner">Schwimmschule Delphine Rosenheim</a>
+      <nav class="nav-desktop">
+        <ul>
+          <li><a href="#">Startseite</a></li>
+          <li class="nav-item"><a href="#">Über uns</a><ul class="dropdown"><li><a href="#">Über uns</a></li><li><a href="#">Team</a></li></ul></li>
+          <li class="nav-item"><a href="#">Kursangebot</a><ul class="dropdown"><li><a href="#">Anfängerkurs</a></li><li><a href="#">Fortgeschrittenenkurs</a></li><li><a href="#">Einzelunterricht</a></li><li><a href="#">Schwimmabzeichen</a></li></ul></li>
+          <li class="nav-item"><a href="#">Kontakt</a><ul class="dropdown"><li><a href="#">Kontakt</a></li><li><a href="#">AGB</a></li></ul></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Menü">☰</button>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <h1>Herzlich willkommen in der Schwimmschule Delphine Rosenheim</h1>
+      <p><a href="#" class="btn btn-outline mt-2">Mehr erfahren</a></p>
+    </section>
+    <section class="section">
+      <h2>Philosophie</h2>
+      <h3>„Mit Freude und Sicherheit zum Ziel“</h3>
+      <p>Unsere Schwimmschule setzt auf die Kombination von Spaß und Sicherheit, um Kindern und Erwachsenen das Schwimmen beizubringen. Wir glauben, dass Lernen am effektivsten ist, wenn es mit Freude verbunden ist.</p>
+      <h3>„Individuelle Förderung für nachhaltigen Erfolg“</h3>
+      <p>Wir passen unsere Schwimmkurse individuell an die Fähigkeiten und Ziele jedes Einzelnen an. Ob Anfänger, Fortgeschrittene oder Angstbewältigung – wir bieten maßgeschneiderte Unterrichtseinheiten.</p>
+      <p><a href="#" class="btn">Kontakt</a></p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="copyright">© Copyright. Alle Rechte vorbehalten.</p>
+      <div class="footer-links"><a href="#">Impressum</a><a href="#">Datenschutz</a></div>
+    </div>
+  </footer>
+</div>
+
+<!-- ========== SEITE 3: Team ========== -->
+<div class="canva-page" data-page="Seite 3 – Team">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo"><img src="../images/banner_swim.png" alt="" class="logo-banner">Schwimmschule Delphine Rosenheim</a>
+      <nav class="nav-desktop">
+        <ul>
+          <li><a href="#">Startseite</a></li>
+          <li class="nav-item"><a href="#">Über uns</a><ul class="dropdown"><li><a href="#">Über uns</a></li><li><a href="#">Team</a></li></ul></li>
+          <li class="nav-item"><a href="#">Kursangebot</a><ul class="dropdown"><li><a href="#">Anfängerkurs</a></li><li><a href="#">Fortgeschrittenenkurs</a></li><li><a href="#">Einzelunterricht</a></li><li><a href="#">Schwimmabzeichen</a></li></ul></li>
+          <li class="nav-item"><a href="#">Kontakt</a><ul class="dropdown"><li><a href="#">Kontakt</a></li><li><a href="#">AGB</a></li></ul></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Menü">☰</button>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <h1>Unser Team</h1>
+    </section>
+    <section class="section">
+      <div class="team-grid">
+        <article class="team-card">
+          <img src="../images/team/luca.jpg" alt="Luca" class="team-card-photo" width="280" height="280">
+          <h3>Luca</h3>
+          <p class="role">Schwimmlehrer</p>
+          <p>Geprüfter Meister für Bäderbetriebe und leidenschaftlicher Schwimmer. Ob Schwimmanfänger oder Techniktraining – ich begleite alle mit Geduld und Begeisterung.</p>
+        </article>
+        <article class="team-card">
+          <img src="../images/team/lukas.jpg" alt="Lukas" class="team-card-photo" width="280" height="280">
+          <h3>Lukas</h3>
+          <p class="role">Schwimmlehrer</p>
+          <p>Schwimmen ist schon immer mein Sport gewesen! Ich begleite euch vom Anfängerkurs bis zum Techniktraining, wobei Sicherheit und Spaß im Wasser immer an erster Stelle stehen.</p>
+        </article>
+        <article class="team-card">
+          <img src="../images/team/chris.jpg" alt="Chris" class="team-card-photo" width="280" height="280">
+          <h3>Chris</h3>
+          <p class="role">Schwimmlehrer</p>
+          <p>Schwimmlehrer und Ausbilder im Prienavera Erlebnisbad. Ob Anfänger oder Bahn-Profi – Hauptsache, wir bleiben alle über Wasser!</p>
+        </article>
+        <article class="team-card">
+          <img src="../images/team/irene.jpg" alt="Irene" class="team-card-photo" width="280" height="280">
+          <h3>Irene</h3>
+          <p class="role">Schwimmlehrerin</p>
+          <p>Fachangestellte für Bäderbetriebe. Ich liebe es, anderen das Schwimmen beizubringen und zu sehen, wie sie sich im Wasser immer wohler fühlen.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="copyright">© Copyright. Alle Rechte vorbehalten.</p>
+      <div class="footer-links"><a href="#">Impressum</a><a href="#">Datenschutz</a></div>
+    </div>
+  </footer>
+</div>
+
+<!-- ========== SEITE 4: Kursangebot ========== -->
+<div class="canva-page" data-page="Seite 4 – Kursangebot">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo"><img src="../images/banner_swim.png" alt="" class="logo-banner">Schwimmschule Delphine Rosenheim</a>
+      <nav class="nav-desktop">
+        <ul>
+          <li><a href="#">Startseite</a></li>
+          <li class="nav-item"><a href="#">Über uns</a><ul class="dropdown"><li><a href="#">Über uns</a></li><li><a href="#">Team</a></li></ul></li>
+          <li class="nav-item"><a href="#">Kursangebot</a><ul class="dropdown"><li><a href="#">Anfängerkurs</a></li><li><a href="#">Fortgeschrittenenkurs</a></li><li><a href="#">Einzelunterricht</a></li><li><a href="#">Schwimmabzeichen</a></li></ul></li>
+          <li class="nav-item"><a href="#">Kontakt</a><ul class="dropdown"><li><a href="#">Kontakt</a></li><li><a href="#">AGB</a></li></ul></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Menü">☰</button>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <h1>Kursangebot</h1>
+    </section>
+    <section class="section">
+      <h2>Unsere Kurse</h2>
+      <div class="course-grid">
+        <article class="course-card">
+          <h3>Anfängerkurs</h3>
+          <p>Frosch und Seepferdchen Abzeichen</p>
+          <a href="#" class="btn">Mehr erfahren</a>
+        </article>
+        <article class="course-card">
+          <h3>Fortgeschrittenenkurs</h3>
+          <p>Bronze Abzeichen</p>
+          <a href="#" class="btn">Mehr erfahren</a>
+        </article>
+        <article class="course-card">
+          <h3>Einzelunterricht</h3>
+          <p>Für Anfänger und Technikverbesserung</p>
+          <a href="#" class="btn">Mehr erfahren</a>
+        </article>
+      </div>
+      <h3 class="text-center mt-2">Wir freuen uns auf eine großartige Zeit im Wasser!</h3>
+      <p class="text-center"><a href="#" class="btn">Kontakt</a></p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="copyright">© Copyright. Alle Rechte vorbehalten.</p>
+      <div class="footer-links"><a href="#">Impressum</a><a href="#">Datenschutz</a></div>
+    </div>
+  </footer>
+</div>
+
+<!-- ========== SEITE 5: Anfängerkurs ========== -->
+<div class="canva-page" data-page="Seite 5 – Anfängerkurs">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo"><img src="../images/banner_swim.png" alt="" class="logo-banner">Schwimmschule Delphine Rosenheim</a>
+      <nav class="nav-desktop">
+        <ul>
+          <li><a href="#">Startseite</a></li>
+          <li class="nav-item"><a href="#">Über uns</a><ul class="dropdown"><li><a href="#">Über uns</a></li><li><a href="#">Team</a></li></ul></li>
+          <li class="nav-item"><a href="#">Kursangebot</a><ul class="dropdown"><li><a href="#">Anfängerkurs</a></li><li><a href="#">Fortgeschrittenenkurs</a></li><li><a href="#">Einzelunterricht</a></li><li><a href="#">Schwimmabzeichen</a></li></ul></li>
+          <li class="nav-item"><a href="#">Kontakt</a><ul class="dropdown"><li><a href="#">Kontakt</a></li><li><a href="#">AGB</a></li></ul></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Menü">☰</button>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <h1>Anfängerkurs</h1>
+      <p><a href="#" class="btn btn-outline mt-2">Mehr erfahren</a></p>
+    </section>
+    <section class="section course-detail">
+      <h2>Anfängerkurs Frosch und Seepferdchen Abzeichen</h2>
+      <ul>
+        <li>Kursdauer: 8 Einheiten à 45 Minuten.</li>
+        <li>Zielgruppe: Kinder ab 5 Jahren, die ihre ersten Schwimmfähigkeiten erlernen möchten.</li>
+      </ul>
+      <h3>Methodik</h3>
+      <ul>
+        <li><strong>Wassergewöhnung:</strong> Die ersten Stunden stehen im Zeichen der Wassergewöhnung.</li>
+        <li><strong>Spielerisches Lernen:</strong> Alle Übungen sind spielerisch aufgebaut, um die Freude am Lernen zu fördern.</li>
+      </ul>
+      <h3>Unsere nächsten Kurse</h3>
+      <p class="download-form-wrap">
+        <a href="../docs/Anmelderformular-neu.docx" class="btn btn-download" download>
+          <span class="btn-download-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></span>
+          Anmeldeformular herunterladen
+        </a>
+      </p>
+      <div class="course-date-block">
+        <h4>Rosenheim – Dezember</h4>
+        <p><strong>Start Di. 02.12.2025</strong>, Ausgebucht</p>
+        <p>Kursdauer: 8 Einheiten à 45 Minuten. Zeit: 14:45–15:30 Uhr</p>
+        <p>Wo: Lehrschwimmbecken Aising, Gärtnerstraße 6, 83026 Rosenheim</p>
+        <p>Kosten: € 169,- zzgl. 2€ pro Schwimmeinheit</p>
+      </div>
+      <p><a href="#" class="btn">Jetzt anmelden</a></p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="copyright">© Copyright. Alle Rechte vorbehalten.</p>
+      <div class="footer-links"><a href="#">Impressum</a><a href="#">Datenschutz</a></div>
+    </div>
+  </footer>
+</div>
+
+<!-- ========== SEITE 6: Fortgeschrittenenkurs ========== -->
+<div class="canva-page" data-page="Seite 6 – Fortgeschrittenenkurs">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo"><img src="../images/banner_swim.png" alt="" class="logo-banner">Schwimmschule Delphine Rosenheim</a>
+      <nav class="nav-desktop">
+        <ul>
+          <li><a href="#">Startseite</a></li>
+          <li class="nav-item"><a href="#">Über uns</a><ul class="dropdown"><li><a href="#">Über uns</a></li><li><a href="#">Team</a></li></ul></li>
+          <li class="nav-item"><a href="#">Kursangebot</a><ul class="dropdown"><li><a href="#">Anfängerkurs</a></li><li><a href="#">Fortgeschrittenenkurs</a></li><li><a href="#">Einzelunterricht</a></li><li><a href="#">Schwimmabzeichen</a></li></ul></li>
+          <li class="nav-item"><a href="#">Kontakt</a><ul class="dropdown"><li><a href="#">Kontakt</a></li><li><a href="#">AGB</a></li></ul></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Menü">☰</button>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <h1>Fortgeschrittenenkurs</h1>
+      <p><a href="#" class="btn btn-outline mt-2">Mehr erfahren</a></p>
+    </section>
+    <section class="section course-detail">
+      <h2>Fortgeschrittenenkurs Bronze Abzeichen</h2>
+      <ul>
+        <li>Zielgruppe: Kinder ab 5 Jahren, die das Seepferdchen-Abzeichen besitzen und ihre Schwimmfähigkeiten weiterentwickeln möchten.</li>
+      </ul>
+      <h3>Methodik</h3>
+      <ul>
+        <li><strong>Tieftauchen und Springen:</strong> Die Kinder lernen, tiefere Wasserbereiche zu meistern.</li>
+        <li><strong>Ausdauertraining:</strong> Aufbau von Schwimmausdauer.</li>
+        <li><strong>Technik-Vertiefung:</strong> Verfeinerung der Brustschwimmtechnik, Erlernen des Rückenschwimmens.</li>
+      </ul>
+      <div class="course-date-block">
+        <h4>Rosenheim – Dezember</h4>
+        <p><strong>Aufbaukurs für Fortgeschrittene</strong></p>
+        <p>Start: 02.12.2025, 15:15–16:00 Uhr. Kursdauer: 12 Einheiten à 45 Minuten</p>
+        <p>Wo: Lehrschwimmbecken Aising, Gärtnerstraße 6, 83026 Rosenheim</p>
+        <p>Kosten: € 235,- zzgl. 2€ pro Schwimmeinheit</p>
+      </div>
+      <p><a href="#" class="btn">Jetzt anmelden</a></p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="copyright">© Copyright. Alle Rechte vorbehalten.</p>
+      <div class="footer-links"><a href="#">Impressum</a><a href="#">Datenschutz</a></div>
+    </div>
+  </footer>
+</div>
+
+<!-- ========== SEITE 7: Einzelunterricht ========== -->
+<div class="canva-page" data-page="Seite 7 – Einzelunterricht">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo"><img src="../images/banner_swim.png" alt="" class="logo-banner">Schwimmschule Delphine Rosenheim</a>
+      <nav class="nav-desktop">
+        <ul>
+          <li><a href="#">Startseite</a></li>
+          <li class="nav-item"><a href="#">Über uns</a><ul class="dropdown"><li><a href="#">Über uns</a></li><li><a href="#">Team</a></li></ul></li>
+          <li class="nav-item"><a href="#">Kursangebot</a><ul class="dropdown"><li><a href="#">Anfängerkurs</a></li><li><a href="#">Fortgeschrittenenkurs</a></li><li><a href="#">Einzelunterricht</a></li><li><a href="#">Schwimmabzeichen</a></li></ul></li>
+          <li class="nav-item"><a href="#">Kontakt</a><ul class="dropdown"><li><a href="#">Kontakt</a></li><li><a href="#">AGB</a></li></ul></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Menü">☰</button>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <h1>Einzelunterricht</h1>
+      <p><a href="#" class="btn btn-outline mt-2">Mehr erfahren</a></p>
+    </section>
+    <section class="section course-detail">
+      <h2>Einzelunterricht</h2>
+      <ul>
+        <li>Kursdauer: Einzelstunden à 45 Minuten oder als 5er-Paket buchbar.</li>
+        <li>Zielgruppe: Kinder und Erwachsene, die individuelles Schwimmtraining benötigen.</li>
+      </ul>
+      <h3>Kosten</h3>
+      <ul>
+        <li>1 Kind: € 45,- für 45 Minuten</li>
+        <li>2 Kinder: € 60,- für 45 Minuten</li>
+        <li>Erwachsene: € 60,- für 60 Minuten</li>
+      </ul>
+      <h3>Wo</h3>
+      <p>Rosenheim · Prienavera Erlebnisbad, Prien</p>
+      <p><a href="#" class="btn">Jetzt anmelden</a></p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="copyright">© Copyright. Alle Rechte vorbehalten.</p>
+      <div class="footer-links"><a href="#">Impressum</a><a href="#">Datenschutz</a></div>
+    </div>
+  </footer>
+</div>
+
+<!-- ========== SEITE 8: Schwimmabzeichen ========== -->
+<div class="canva-page" data-page="Seite 8 – Schwimmabzeichen">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo"><img src="../images/banner_swim.png" alt="" class="logo-banner">Schwimmschule Delphine Rosenheim</a>
+      <nav class="nav-desktop">
+        <ul>
+          <li><a href="#">Startseite</a></li>
+          <li class="nav-item"><a href="#">Über uns</a><ul class="dropdown"><li><a href="#">Über uns</a></li><li><a href="#">Team</a></li></ul></li>
+          <li class="nav-item"><a href="#">Kursangebot</a><ul class="dropdown"><li><a href="#">Anfängerkurs</a></li><li><a href="#">Fortgeschrittenenkurs</a></li><li><a href="#">Einzelunterricht</a></li><li><a href="#">Schwimmabzeichen</a></li></ul></li>
+          <li class="nav-item"><a href="#">Kontakt</a><ul class="dropdown"><li><a href="#">Kontakt</a></li><li><a href="#">AGB</a></li></ul></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Menü">☰</button>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <h1>Schwimmabzeichen</h1>
+    </section>
+    <section class="section">
+      <h2>Schwimmabzeichen</h2>
+      <p>In unseren Kursen können die Kinder die folgenden Abzeichen erwerben:</p>
+      <ul>
+        <li><strong>Frosch / Seepferdchen</strong> – im Anfängerkurs</li>
+        <li><strong>Bronze (Freischwimmer)</strong> – im Fortgeschrittenenkurs</li>
+      </ul>
+      <p>Weitere Abzeichen (Silber, Gold) können auf Anfrage angeboten werden.</p>
+      <p><a href="#" class="btn">Kontakt</a></p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="copyright">© Copyright. Alle Rechte vorbehalten.</p>
+      <div class="footer-links"><a href="#">Impressum</a><a href="#">Datenschutz</a></div>
+    </div>
+  </footer>
+</div>
+
+<!-- ========== SEITE 9: Kontakt ========== -->
+<div class="canva-page" data-page="Seite 9 – Kontakt">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo"><img src="../images/banner_swim.png" alt="" class="logo-banner">Schwimmschule Delphine Rosenheim</a>
+      <nav class="nav-desktop">
+        <ul>
+          <li><a href="#">Startseite</a></li>
+          <li class="nav-item"><a href="#">Über uns</a><ul class="dropdown"><li><a href="#">Über uns</a></li><li><a href="#">Team</a></li></ul></li>
+          <li class="nav-item"><a href="#">Kursangebot</a><ul class="dropdown"><li><a href="#">Anfängerkurs</a></li><li><a href="#">Fortgeschrittenenkurs</a></li><li><a href="#">Einzelunterricht</a></li><li><a href="#">Schwimmabzeichen</a></li></ul></li>
+          <li class="nav-item"><a href="#">Kontakt</a><ul class="dropdown"><li><a href="#">Kontakt</a></li><li><a href="#">AGB</a></li></ul></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Menü">☰</button>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <h1>Kontakt</h1>
+    </section>
+    <section class="section">
+      <div class="contact-grid">
+        <div>
+          <h2>Nachricht senden</h2>
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="c-name" class="required">Name</label>
+              <input type="text" id="c-name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="c-email" class="required">E-Mail</label>
+              <input type="email" id="c-email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="c-phone" class="required">Telefon</label>
+              <input type="tel" id="c-phone" name="phone" required>
+            </div>
+            <div class="form-group">
+              <label for="c-msg">Nachricht</label>
+              <textarea id="c-msg" name="message" rows="5"></textarea>
+            </div>
+            <p class="mb-2">* Kennzeichnet erforderliche Felder</p>
+            <button type="button" class="btn">Senden</button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <h3>So erreichen Sie uns</h3>
+          <p><strong>Telefon:</strong> +49 160 5936650<br>Erreichbar Mo–Do 10–13 Uhr</p>
+          <p><strong>WhatsApp:</strong> +49 160 5936650</p>
+          <p><strong>E-Mail:</strong> info@delphine-rosenheim.de</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="copyright">© Copyright. Alle Rechte vorbehalten.</p>
+      <div class="footer-links"><a href="#">Impressum</a><a href="#">Datenschutz</a></div>
+    </div>
+  </footer>
+</div>
+
+<!-- ========== SEITE 10: FAQ ========== -->
+<div class="canva-page" data-page="Seite 10 – FAQ">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo"><img src="../images/banner_swim.png" alt="" class="logo-banner">Schwimmschule Delphine Rosenheim</a>
+      <nav class="nav-desktop">
+        <ul>
+          <li><a href="#">Startseite</a></li>
+          <li class="nav-item"><a href="#">Über uns</a><ul class="dropdown"><li><a href="#">Über uns</a></li><li><a href="#">Team</a></li></ul></li>
+          <li class="nav-item"><a href="#">Kursangebot</a><ul class="dropdown"><li><a href="#">Anfängerkurs</a></li><li><a href="#">Fortgeschrittenenkurs</a></li><li><a href="#">Einzelunterricht</a></li><li><a href="#">Schwimmabzeichen</a></li></ul></li>
+          <li class="nav-item"><a href="#">Kontakt</a><ul class="dropdown"><li><a href="#">Kontakt</a></li><li><a href="#">AGB</a></li></ul></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Menü">☰</button>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <h1>FAQ</h1>
+    </section>
+    <section class="section">
+      <h2>Häufig gestellte Fragen</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h4>Ab wie vielen Jahren ist der Anfängerkurs gedacht?</h4>
+          <p>Unsere Anfängerkurse sind in der Regel ab 5 Jahren geeignet. Wenn Ihr Kind bereits mit 4 Jahren starten möchte, ist vorab 1–2 Stunden Einzelunterricht erforderlich.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Wie viele Kinder und Schwimmlehrer sind pro Kurs?</h4>
+          <p>Bei bis zu maximal 5 Kindern wird der Kurs von 1 Schwimmlehrer begleitet. Ab 6 Kindern sind 2 Schwimmlehrer im Einsatz.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Wann finden die nächsten Kurse statt?</h4>
+          <p>Die aktuellen Kurstermine finden Sie im Bereich „Kursangebot“ unter dem jeweiligen Kurs.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Wird der Gutschein „Mach mit – Tauch auf!“ akzeptiert?</h4>
+          <p>Ja! Füllen Sie den Gutschein einfach aus und geben Sie ihn direkt beim Schwimmlehrer ab.</p>
+        </div>
+      </div>
+      <p class="text-center mt-2"><a href="#" class="btn">Kontakt</a></p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="copyright">© Copyright. Alle Rechte vorbehalten.</p>
+      <div class="footer-links"><a href="#">Impressum</a><a href="#">Datenschutz</a></div>
+    </div>
+  </footer>
+</div>
+
+<!-- ========== SEITE 11: AGB ========== -->
+<div class="canva-page" data-page="Seite 11 – AGB">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo"><img src="../images/banner_swim.png" alt="" class="logo-banner">Schwimmschule Delphine Rosenheim</a>
+      <nav class="nav-desktop">
+        <ul>
+          <li><a href="#">Startseite</a></li>
+          <li class="nav-item"><a href="#">Über uns</a><ul class="dropdown"><li><a href="#">Über uns</a></li><li><a href="#">Team</a></li></ul></li>
+          <li class="nav-item"><a href="#">Kursangebot</a><ul class="dropdown"><li><a href="#">Anfängerkurs</a></li><li><a href="#">Fortgeschrittenenkurs</a></li><li><a href="#">Einzelunterricht</a></li><li><a href="#">Schwimmabzeichen</a></li></ul></li>
+          <li class="nav-item"><a href="#">Kontakt</a><ul class="dropdown"><li><a href="#">Kontakt</a></li><li><a href="#">AGB</a></li></ul></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Menü">☰</button>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <h1>AGB</h1>
+    </section>
+    <section class="section">
+      <h2>Allgemeine Geschäftsbedingungen</h2>
+      <p>Die Allgemeinen Geschäftsbedingungen der Schwimmschule Delphine Rosenheim regeln die Teilnahme an Schwimmkursen, Anmeldung, Zahlung und Stornierung. Bitte kontaktieren Sie uns für die vollständigen AGB oder bei Fragen.</p>
+      <p><a href="#" class="btn">Kontakt</a></p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="copyright">© Copyright. Alle Rechte vorbehalten.</p>
+      <div class="footer-links"><a href="#">Impressum</a><a href="#">Datenschutz</a></div>
+    </div>
+  </footer>
+</div>
+
+<!-- ========== SEITE 12: Impressum ========== -->
+<div class="canva-page" data-page="Seite 12 – Impressum">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo"><img src="../images/banner_swim.png" alt="" class="logo-banner">Schwimmschule Delphine Rosenheim</a>
+      <nav class="nav-desktop">
+        <ul>
+          <li><a href="#">Startseite</a></li>
+          <li class="nav-item"><a href="#">Über uns</a><ul class="dropdown"><li><a href="#">Über uns</a></li><li><a href="#">Team</a></li></ul></li>
+          <li class="nav-item"><a href="#">Kursangebot</a><ul class="dropdown"><li><a href="#">Anfängerkurs</a></li><li><a href="#">Fortgeschrittenenkurs</a></li><li><a href="#">Einzelunterricht</a></li><li><a href="#">Schwimmabzeichen</a></li></ul></li>
+          <li class="nav-item"><a href="#">Kontakt</a><ul class="dropdown"><li><a href="#">Kontakt</a></li><li><a href="#">AGB</a></li></ul></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Menü">☰</button>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <h1>Impressum</h1>
+    </section>
+    <section class="section">
+      <h2>Angaben gemäß § 5 TMG</h2>
+      <p>Schwimmschule Delphine Rosenheim</p>
+      <p>Rosenheim</p>
+      <h3>Kontakt</h3>
+      <p>Telefon: +49 160 5936650</p>
+      <p>E-Mail: info@delphine-rosenheim.de</p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="copyright">© Copyright. Alle Rechte vorbehalten.</p>
+      <div class="footer-links"><a href="#">Impressum</a><a href="#">Datenschutz</a></div>
+    </div>
+  </footer>
+</div>
+
+<!-- ========== SEITE 13: Datenschutz ========== -->
+<div class="canva-page" data-page="Seite 13 – Datenschutz">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo"><img src="../images/banner_swim.png" alt="" class="logo-banner">Schwimmschule Delphine Rosenheim</a>
+      <nav class="nav-desktop">
+        <ul>
+          <li><a href="#">Startseite</a></li>
+          <li class="nav-item"><a href="#">Über uns</a><ul class="dropdown"><li><a href="#">Über uns</a></li><li><a href="#">Team</a></li></ul></li>
+          <li class="nav-item"><a href="#">Kursangebot</a><ul class="dropdown"><li><a href="#">Anfängerkurs</a></li><li><a href="#">Fortgeschrittenenkurs</a></li><li><a href="#">Einzelunterricht</a></li><li><a href="#">Schwimmabzeichen</a></li></ul></li>
+          <li class="nav-item"><a href="#">Kontakt</a><ul class="dropdown"><li><a href="#">Kontakt</a></li><li><a href="#">AGB</a></li></ul></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Menü">☰</button>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <h1>Datenschutz</h1>
+    </section>
+    <section class="section">
+      <h2>Datenschutzerklärung</h2>
+      <p>Der Schutz Ihrer persönlichen Daten ist uns wichtig. Wir erheben und verarbeiten personenbezogene Daten nur im Rahmen der gesetzlichen Bestimmungen (DSGVO, BDSG).</p>
+      <h3>Verantwortlicher</h3>
+      <p>Schwimmschule Delphine Rosenheim – Kontakt: info@delphine-rosenheim.de</p>
+      <h3>Kontaktanfragen</h3>
+      <p>Daten aus dem Kontaktformular werden ausschließlich zur Bearbeitung Ihrer Anfrage verwendet und nicht an Dritte weitergegeben.</p>
+      <h3>Ihre Rechte</h3>
+      <p>Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer Daten.</p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="copyright">© Copyright. Alle Rechte vorbehalten.</p>
+      <div class="footer-links"><a href="#">Impressum</a><a href="#">Datenschutz</a></div>
+    </div>
+  </footer>
+</div>
+
+<p class="canva-footer-note" style="padding:24px;text-align:center;color:#555;font-size:0.9rem;">
+  <strong>Für Canva:</strong> Drucken (Strg+P) → „Als PDF speichern“ wählen → PDF in Canva unter „Hochladen“ einfügen. Jede Website-Seite wird eine eigene PDF-Seite; in Canva können Sie die Seiten einzeln nutzen und das Design bearbeiten.
+</p>
+</body>
+</html>
